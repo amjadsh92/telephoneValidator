@@ -52,6 +52,12 @@
     height:85%;
     margin:15px auto 0px auto;
     background-color:rgb(210, 210, 210);
+    padding:1px;
 
 
+  }
+
+  .input-container p{
+    text-align:center;
+    margin-top:10px;
   }
