@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: rgb(50, 60, 70);
+  }
+  
+  img {
+    display: block;
+    width: 250px;
+    height: 150px;
+    margin: -20px auto 0px auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    width: 500px;
+    margin: 0 auto 0 auto;
+  }
+
+  .phone-outer-border{
+
+    width:230px;
+    height:420px;
+    border-radius:15px;
+    margin:50px auto 0px auto;
+    background-color:black;
+  }
