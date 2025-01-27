@@ -61,3 +61,14 @@
     text-align:center;
     margin-top:10px;
   }
+
+  .input-container input{
+    display: block;
+    margin: 15px auto 0px auto;
+    width: 90%;
+    border-radius: 9px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+  }
