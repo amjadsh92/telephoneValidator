@@ -126,4 +126,15 @@
     margin-top:0px;
 }
 
+.invalid-input-title{
+    margin-top:10px;
+    color: rgb(70, 58, 35);
+    
+}
+
+.invalid-input{
+    font-size:18px;
+    color: rgb(70, 58, 35);
+    margin-top:0px;
+}
 

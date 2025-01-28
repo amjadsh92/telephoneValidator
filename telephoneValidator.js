@@ -26,9 +26,21 @@ const isValid =(str) => {
 console.log(isValid(inputNumber.value))
 
 
-checkButton.addEventListener("click", () => { debugger; if (isValid(inputNumber.value)){
+checkButton.addEventListener("click", () => { 
+    if (inputNumber.value === ""){
+        alert("Please provide a phone number")
+    }
+    else if (isValid(inputNumber.value)){
     const htmlstring = `<p class="valid-input-title">Valid US number:</p><p class="valid-input">${inputNumber.value}</p>`
     resultContainer.innerHTML += htmlstring;
     inputNumber.value ="";
-} } ) 
+    }
+    else if (!isValid(inputNumber.value)){
+        const htmlstring = `<p class="invalid-input-title">Invalid US number:</p><p class="invalid-input">${inputNumber.value}</p>`
+        resultContainer.innerHTML += htmlstring;
+        inputNumber.value ="";
+        }
+
+
+} ) 
 
