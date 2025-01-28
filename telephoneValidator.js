@@ -13,6 +13,8 @@ const resultContainer = document.getElementById("result")
 const checkButton = document.getElementById("check")
 const clearButton = document.getElementById("clear")
 
+resultContainer.innerHTML = localStorage.getItem("result-container")? localStorage.getItem("result-container"):""
+
 
 const isValid =(str) => {
      
@@ -34,20 +36,23 @@ checkButton.addEventListener("click", () => {
     else if (isValid(inputNumber.value)){
     const htmlstring = `<p class="valid-input-title">Valid US number:</p><p class="valid-input">${inputNumber.value}</p>`
     resultContainer.innerHTML += htmlstring;
+    localStorage.setItem("result-container", resultContainer.innerHTML)
     inputNumber.value ="";
     }
     else if (!isValid(inputNumber.value)){
-        const htmlstring = `<p class="invalid-input-title">Invalid US number:</p><p class="invalid-input">${inputNumber.value}</p>`
-        resultContainer.innerHTML += htmlstring;
-        inputNumber.value ="";
-        }
+    const htmlstring = `<p class="invalid-input-title">Invalid US number:</p><p class="invalid-input">${inputNumber.value}</p>`
+    resultContainer.innerHTML += htmlstring;
+    localStorage.setItem("result-container", resultContainer.innerHTML)
+    inputNumber.value ="";
+    }
 
 
 } )
 
 clearButton.addEventListener("click", ()=>{
-
+     
      resultContainer.innerHTML = "";
+     localStorage.clear();
 
 
 })
