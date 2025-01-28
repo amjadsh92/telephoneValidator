@@ -1,140 +1,128 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-  }
-  
-  html {
-    overflow-x: hidden;
-  }
-  
-  body {
-    background-color: rgb(50, 60, 70);
-  }
-  
-  img {
-    display: block;
-    width: 250px;
-    height: 150px;
-    margin: -20px auto 0px auto;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    width: 500px;
-    margin: 0 auto 0 auto;
-  }
-
-  .phone-outer-border{
-
-    width:240px;
-    
-    border-radius:15px;
-    margin:50px auto 0px auto;
-    background-color:black;
-    padding:1px;
-  }
-
-  .circle{
-
-    width:10px;
-    height:10px;
-    margin:10px auto 0px auto;
-    background-color: white;
-    border-radius:50%;
-  }
-
-  .input-container{
-    width:90%;
-    height:380px;
-    margin:15px auto 10px auto;
-    background-color:rgb(210, 210, 210);
-    padding:1px;
-    
-
-
-  }
-
-  .enter-number{
-    text-align:center;
-    margin-top:10px;
-  }
-
-  .input-container input{
-    display: block;
-    margin: 15px auto 0px auto;
-    width: 90%;
-    border-radius: 9px;
-    height: 40px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .check-clear{
-    display:flex;
-    width:90%;
-    justify-content: center;
-    margin:0px auto 15px auto;
-    gap:20px
-  }
-
-  .check-clear button{
-    width:90px;
-    height:25px;
-    font-size:16px;
-    background:linear-gradient(white, grey);
-    border-right:3px solid grey;
-    border-bottom:3px solid grey;
-    border-top:3px solid white;
-    border-left:3px solid white;
-    cursor:pointer
-  }
-
-  .check-clear button:active{
-
-    border-right:3px solid white;
-    border-bottom:3px solid white;
-    border-top:3px solid grey;
-    border-left:3px solid grey;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(50, 60, 70);
+}
+
+img {
+  display: block;
+  width: 250px;
+  height: 150px;
+  margin: -20px auto 0px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  width: 500px;
+  margin: 0 auto 0 auto;
+}
+
+.phone-outer-border {
+  width: 240px;
+
+  border-radius: 15px;
+  margin: 50px auto 0px auto;
+  background-color: black;
+  padding: 1px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  margin: 10px auto 0px auto;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.input-container {
+  width: 90%;
+  height: 380px;
+  margin: 15px auto 10px auto;
+  background-color: rgb(210, 210, 210);
+  padding: 1px;
+}
+
+.enter-number {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input-container input {
+  display: block;
+  margin: 15px auto 0px auto;
+  width: 90%;
+  border-radius: 9px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+
+.check-clear {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin: 0px auto 15px auto;
+  gap: 20px;
+}
+
+.check-clear button {
+  width: 90px;
+  height: 25px;
+  font-size: 16px;
+  background: linear-gradient(white, grey);
+  border-right: 3px solid grey;
+  border-bottom: 3px solid grey;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  cursor: pointer;
+}
+
+.check-clear button:active {
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
 
 .result {
-    overflow: auto;
-    max-height: 78%;
+  overflow: auto;
+  max-height: 78%;
 }
 
-.result p{
-    font-size:18px;
-    text-align:center
-
+.result p {
+  font-size: 18px;
+  text-align: center;
 }
-.valid-input-title{
-    margin-top:10px;
-    color: rgb(0, 80, 0);
-    
+.valid-input-title {
+  margin-top: 10px;
+  color: rgb(0, 80, 0);
 }
 
-.valid-input{
-    font-size:18px;
-    color: rgb(0, 80, 0);
-    margin-top:0px;
+.valid-input {
+  font-size: 18px;
+  color: rgb(0, 80, 0);
+  margin-top: 0px;
 }
 
-.invalid-input-title{
-    margin-top:10px;
-    color: rgb(70, 58, 35);
-    
+.invalid-input-title {
+  margin-top: 10px;
+  color: rgb(70, 58, 35);
 }
 
-.invalid-input{
-    font-size:18px;
-    color: rgb(70, 58, 35);
-    margin-top:0px;
+.invalid-input {
+  font-size: 18px;
+  color: rgb(70, 58, 35);
+  margin-top: 0px;
 }
-
