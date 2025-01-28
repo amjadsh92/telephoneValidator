@@ -1,11 +1,11 @@
 const regex_array=
-    [/1\s(\d{3})-(\d{3})-(\d{4})/g, 
-    /1\s\((\d{3})\)\s(\d{3})-(\d{4})/g,
-    /1\((\d{3})\)(\d{3})-(\d{4})/g,
-    /1\s(\d{3})\s(\d{3})\s(\d{4})/g,
-    /\d{10}/,
-    /(\d{3})-(\d{3})-(\d{4})/g,
-    /\((\d{3})\)(\d{3})-(\d{4})/g]
+    [/^1\s(\d{3})-(\d{3})-(\d{4})$/g, 
+    /^1\s\((\d{3})\)\s(\d{3})-(\d{4})$/g,
+    /^1\((\d{3})\)(\d{3})-(\d{4})$/g,
+    /^1\s(\d{3})\s(\d{3})\s(\d{4})$/g,
+    /^\d{10}$/,
+    /^(\d{3})-(\d{3})-(\d{4})$/g,
+    /^\((\d{3})\)(\d{3})-(\d{4})$/g]
 
 
 const inputNumber = document.getElementById("input-number") 
@@ -13,7 +13,7 @@ const resultContainer = document.getElementById("result")
 const checkButton = document.getElementById("check")
 const clearButton = document.getElementById("clear")
 
-resultContainer.innerHTML = localStorage.getItem("result-container")? localStorage.getItem("result-container"):""
+resultContainer.innerHTML = localStorage.getItem("result-container")
 
 
 const isValid =(str) => {
@@ -29,7 +29,7 @@ const isValid =(str) => {
 console.log(isValid(inputNumber.value))
 
 
-checkButton.addEventListener("click", () => { 
+const outputResult = () => {
     if (inputNumber.value === ""){
         alert("Please provide a phone number")
     }
@@ -45,10 +45,14 @@ checkButton.addEventListener("click", () => {
     localStorage.setItem("result-container", resultContainer.innerHTML)
     inputNumber.value ="";
     }
+    }
 
 
-} )
-
+checkButton.addEventListener("click", outputResult)
+inputNumber.addEventListener("keydown", (event) => {debugger;
+    if(event.key ==="Enter"){outputResult()} 
+    }
+)
 clearButton.addEventListener("click", ()=>{
      
      resultContainer.innerHTML = "";
