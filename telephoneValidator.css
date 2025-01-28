@@ -53,11 +53,12 @@
     margin:15px auto 10px auto;
     background-color:rgb(210, 210, 210);
     padding:1px;
+    
 
 
   }
 
-  .input-container p{
+  .enter-number{
     text-align:center;
     margin-top:10px;
   }
@@ -101,3 +102,28 @@
     border-left:3px solid grey;
     
 }
+
+
+.result {
+    overflow: auto;
+    max-height: 78%;
+}
+
+.result p{
+    font-size:18px;
+    text-align:center
+
+}
+.valid-input-title{
+    margin-top:10px;
+    color: rgb(0, 80, 0);
+    
+}
+
+.valid-input{
+    font-size:18px;
+    color: rgb(0, 80, 0);
+    margin-top:0px;
+}
+
+
