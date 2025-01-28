@@ -11,7 +11,8 @@ const regex_array=
 const inputNumber = document.getElementById("input-number") 
 const resultContainer = document.getElementById("result") 
 const checkButton = document.getElementById("check")
-console.log(inputNumber.value)
+const clearButton = document.getElementById("clear")
+
 
 const isValid =(str) => {
      
@@ -42,5 +43,12 @@ checkButton.addEventListener("click", () => {
         }
 
 
-} ) 
+} )
+
+clearButton.addEventListener("click", ()=>{
+
+     resultContainer.innerHTML = "";
+
+
+})
 
